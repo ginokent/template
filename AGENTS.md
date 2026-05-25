@@ -42,9 +42,11 @@
 ## git ブランチの命名規則
 
 - Git Flow を使うこと
-- バグ修正は prefix を `feature/fix-` でブランチを切って対応すること
-- 機能追加は prefix を `feature/add-` でブランチを切って対応すること
-- 後方互換のない変更は prefix を `feature/breaking-change-` でブランチを切って対応すること
+- ブランチ名は `feature/add-xxx` または `feature/update-xxx` または `feature/fix-xxx` または `feature/breaking-change-xxx` にすること
+  - 機能追加は prefix を `feature/add-` でブランチを切って対応すること
+  - バグ修正は prefix を `feature/fix-` でブランチを切って対応すること
+  - 後方互換のある変更は prefix を `feature/update-` でブランチを切って対応すること
+  - 後方互換のない変更は prefix を `feature/breaking-change-` でブランチを切って対応すること
 - ブランチ名に issue の番号を含めないこと
 
 ## コミットについて
