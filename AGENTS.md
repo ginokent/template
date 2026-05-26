@@ -113,3 +113,7 @@
 - 完了した issue は `issues/completed/` 配下に移動すること
 - 完了以外の理由で終了した issue は `issues/not-planned/` 配下に移動すること
 - issue を移動したらコミットすること
+
+## PR について
+
+- PR 作成時や PR 本文更新時は、本文にセッション URL を **付与しない** こと
