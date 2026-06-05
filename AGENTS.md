@@ -39,6 +39,22 @@
 - 単体テスト: 意図的なエラーパス、境界値など PBT で実現できないケース
 - PBT でカバーできるものを単体テストで書かない
 
+## issue について
+
+- 何か課題や問題やタスクが発生したら必ず issue に起票すること
+- issue に起票してから取り組むこと
+- `issues/` 配下で管理すること
+- 形式は https://raw.githubusercontent.com/ginokent/template/refs/heads/develop/issues/0000-00-00-00-00-template.md を参考にすること
+- issue の id は JST の起票時刻 `YYYY-mm-dd-HH-MM` とすること
+- {id}-{conventional-commit-type}-{short-description}.md という命名規則を守ること
+  - 例: 2026-05-26-18-17-feat-add-user-model.md
+  - 例: 2026-05-25-17-16-fix-fix-parser-error.md
+- issue を作成したら作業に取り掛かる前にまずコミットすること
+- issue をコミットするときはコミットメッセージに issue の id とタイトルを記載すること
+- 完了した issue は `issues/completed/` 配下に移動すること
+- 完了以外の理由で終了した issue は `issues/not-planned/` 配下に移動すること
+- issue を移動したらコミットすること
+
 ## git ブランチの命名規則
 
 - Git Flow を使うこと
@@ -100,20 +116,6 @@
 - perf: パフォーマンスの改善
 - ci: CI/CD設定の変更
 - build: ビルドシステムに関わる変更
-
-## issue について
-
-- `issues/` 配下で管理すること
-- 形式は https://raw.githubusercontent.com/ginokent/template/refs/heads/develop/issues/0000-00-00-00-00-template.md を参考にすること
-- issue の id は JST の起票時刻 `YYYY-mm-dd-HH-MM` とすること
-- {id}-{conventional-commit-type}-{short-description}.md という命名規則を守ること
-  - 例: 2026-05-26-18-17-feat-add-user-model.md
-  - 例: 2026-05-25-17-16-fix-fix-parser-error.md
-- issue を作成したら作業に取り掛かる前にまずコミットすること
-- issue をコミットするときはコミットメッセージに issue の id とタイトルを記載すること
-- 完了した issue は `issues/completed/` 配下に移動すること
-- 完了以外の理由で終了した issue は `issues/not-planned/` 配下に移動すること
-- issue を移動したらコミットすること
 
 ## PR について
 
