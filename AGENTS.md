@@ -54,11 +54,11 @@
 - 完了した issue は `issues/completed/` 配下に移動すること
 - 完了以外の理由で終了した issue は `issues/not-planned/` 配下に移動すること
 - issue を移動したらコミットすること
+- 複数リポジトリを同時に変更する場合は各リポジトリに issue を書くこと
 
 ## git ブランチの命名規則
 
-- Git Flow を使うこと
-- ブランチ名は `feature/add-xxx` または `feature/update-xxx` または `feature/fix-xxx` または `feature/breaking-change-xxx` にすること
+- 作業ブランチ名は `feature/add-xxx` または `feature/update-xxx` または `feature/fix-xxx` または `feature/breaking-change-xxx` にすること
   - 機能追加は prefix を `feature/add-` でブランチを切って対応すること
   - バグ修正は prefix を `feature/fix-` でブランチを切って対応すること
   - 後方互換のある変更は prefix を `feature/update-` でブランチを切って対応すること
