@@ -120,3 +120,4 @@
 ## PR について
 
 - PR 本文には Session URL を **付与しない** こと
+- リポジトリに pull_request_template.md ファイルが存在している場合、その内容を尊重すること
