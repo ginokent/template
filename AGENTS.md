@@ -120,4 +120,7 @@
 ## PR について
 
 - PR 本文には Session URL を **付与しない** こと
+  - 後述の理由のため、 `gh` コマンドを利用すること
+  - `mcp__github__create_pull_request` を使うと付与されてしまうため利用しない。どうしても利用する際には Session URL が付与される旨を警告し、ユーザーに利用確認を取ること
 - リポジトリに pull_request_template.md ファイルが存在している場合、その内容を尊重すること
+
