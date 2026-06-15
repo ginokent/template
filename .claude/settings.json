@@ -2,5 +2,28 @@
   "attribution": {
     "commit": "",
     "pr": ""
+  },
+  "permissions": {
+    "deny": [
+      "mcp__github__create_pull_request",
+      "mcp__github__add_issue_comment"
+    ]
+  },
+  "language": "japanese",
+  "plansDirectory": "./.claude/plans",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Bash(git *)",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/scripts/guard-branch-name.sh\"",
+            "statusMessage": "Checking branch naming convention"
+          }
+        ]
+      }
+    ]
   }
 }
