@@ -124,3 +124,4 @@
   - `mcp__github__create_pull_request` や `mcp__github__add_issue_comment` を使うと無条件で Session URL が付与されてしまうため利用しない。
     - どうしても利用せざるを得ない際には Session URL が付与される旨を警告し、ユーザーに利用確認を取ること
 - リポジトリに pull_request_template.md ファイルが存在している場合、その内容を尊重すること
+- PR はマージ前に rebase すること。
